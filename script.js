@@ -55,6 +55,9 @@ var if = 23 // cannot do
   * Basic operators
 */
 
+
+/*
+
 //Math Operators
 
 var yearJohn = 2018 - 28;
@@ -105,4 +108,51 @@ console.log(typeof 'Mark is older than john'); //returns String
 
 var x;
 console.log(typeof x); //returns undefined
+*/
+
+
+/***************************************************************
+  * Operator Precedence
+*/
+
+var now = 2018;
+var yearJohn = 1989;
+var fullAge = 18;
+
+//multiple operators
+var isFullAge = now - yearJohn >= fullAge; //true
+console.log(isFullAge);
+
+// Grouping
+var ageJohn =  now - yearJohn;
+var ageMark = 35;
+var average = (ageJohn + ageMark) /2;
+
+console.log(average);
+
+// Multiple assignments
+
+var x, y;
+x = y = (3 + 5) * 4 - 6; //8 * 4 - 6 // 32 - 6 //26
+console.log(x, y);
+
+// More operators
+
+x = x * 2; //can be simplified to:
+x *= 2;
+console.log(x); 
+
+x +=10; // same as x = x + 10
+console.log(x);
+
+x = x +1; // same as
+x +=1;//same as
+x++
+
+x = x - 1; //same as
+x -=1; //same as
+x--;
+
+
+
 
